@@ -15,7 +15,7 @@ social: true
 
 I am a Ph.D. candidate in Electrical and Systems Engineering at the University of Pennsylvania, advised by Prof. [Manfred Morari](https://www.seas.upenn.edu/directory/profile.php?ID=213){:target="_blank"}.
 
-My research interests lie in machine learning, robotics, control theory, optimization and statistics. Applications include autonomous racing and building control.
+My research interests lie in machine learning, robotics, control theory, optimization and statistics. Applications include autonomous racing and building control. Check out my [CV]({{ site.url }}/assets/slides/CV_AchinJain.pdf){:target="_blank"}.
 
 Previously, I have worked as an Applied Scientist Intern at AI Labs in Amazon Web Services, where I jointly worked with Robotics AI and AWS RoboMaker. In 2018, I co-founded Flexergy AI, a SBIR company that provides data-driven energy- and cost-efficient solutions for building control and energy analytics. In 2014, I had the pleasure of working at the Mercedes Benz Research and Development in Stuttgart, Germany in joint collaboration with the [Institute for Dynamic Systems and Control](http://www.idsc.ethz.ch){:target="_blank"}. At ETH Zurich, I also worked at the [Automatic Control Lab](https://www.control.ee.ethz.ch){:target="_blank"}. I was an Intern at ABB Corporate Research, Baden-Dättwil, Switzerland in 2013-14. ABB was kind enough to feature me on their [webpage](http://new.abb.com/ch/en/careers/career-opportunities/graduates/explorer-trainee-program){:target="blank"} :)
 
