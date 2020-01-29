@@ -1,0 +1,228 @@
+% Encoding: UTF-8
+---
+---
+
+@string{aps = {American Physical Society,}}
+
+@InProceedings{JainICCPS2018,
+  author       = {Jain, Achin and Nghiem, Truong and Morari, Manfred and Mangharam, Rahul},
+  title        = {Learning and control using {G}aussian processes},
+  booktitle    = {Proceedings of the ACM/IEEE 9th International Conference on Cyber-Physical Systems (ICCPS)},
+  year         = {2018},
+  pages        = {140--149},
+  organization = {IEEE},
+  abstract     = {Building physics-based models of complex physical systems like buildings and chemical plants is extremely cost and time prohibitive for applications such as real-time optimal control, production planning and supply chain logistics.  Machine learning algorithms can reduce this cost and time complexity, and are, consequently, more scalable for large-scale physical systems. However, there are many practical challenges that must be addressed before employing machine learning for closed-loop control. This paper proposes the use of Gaussian Processes (GP) for learning control-oriented models: (1) We develop methods for the optimal experiment design (OED) of functional tests to learn models of a physical system, subject to stringent operational constraints and limited availability of the system. Using a Bayesian approach with GP, our methods seek to select the most informative data for optimally updating an existing model. (2) We also show that black-box GP models can be used for receding horizon optimal control with probabilistic guarantees on constraint satisfaction through chance constraints. (3) We further propose an online method for continuously improving the GP model in closed-loop with a real-time controller. Our methods are demonstrated and validated in a case study of building energy control and Demand Response.},
+  html         = {https://ieeexplore.ieee.org/document/8443729},
+  pdf          = {JainICCPS18.pdf},
+}
+
+@InProceedings{JainACC2017,
+  author       = {Jain, Achin and Behl, Madhur and Mangharam, Rahul},
+  title        = {Data predictive control for building energy management},
+  booktitle    = {Proceedings of the 2017 American Control Conference (ACC)},
+  year         = {2017},
+  organization = {IEEE},
+  abstract     = {Decisions on how to best optimize energy systems operations are becoming ever so complex and conflicting, that model-based predictive control (MPC) algorithms must play an important role. However, a key factor prohibiting the widespread adoption of MPC in buildings, is the cost, time, and effort associated with learning first-principles based dynamical models of the underlying physical system. This paper introduces an alternative approach for implementing finite-time receding horizon control using control-oriented data-driven models. We call this approach Data Predictive Control (DPC). Specifically, by utilizing separation of variables, two novel algorithms for implementing DPC using a single regression tree and with regression trees ensembles (random forest) are presented. The data predictive controller enables the building operator to trade off energy consumption against thermal comfort without having to learn white/grey box models of the systems dynamics. We present a comprehensive numerical study which compares the performance of DPC with an MPC based energy management strategy, using a single zone building model. Our results demonstrate that performance of DPC is comparable to an MPC controller, with only 3.8% additional cost in terms of optimal objective function and within 95% in terms of R 2 score, thereby making it an alluring alternative to MPC, whenever the associated cost of learning the model is high.},
+  html         = {https://ieeexplore.ieee.org/document/7962928/},
+  pdf          = {JainACC17.pdf},
+}
+
+@InProceedings{JainCDC2017,
+  author       = {Jain, Achin and Smarra, Francesco and Mangharam, Rahul},
+  title        = {Data predictive control using regression trees and ensemble learning},
+  booktitle    = {Proceedings of the 2017 IEEE 56th Annual Conference on Decision and Control (CDC)},
+  year         = {2017},
+  organization = {IEEE},
+  abstract     = {Decisions on how to best operate large complex plants such as natural gas processing, oil refineries, and energy efficient buildings are becoming ever so complex that model-based predictive control (MPC) algorithms must play an important role. However, a key factor prohibiting the widespread adoption of MPC, is the cost, time, and effort associated with learning first-principles dynamical models of the underlying physical system. An alternative approach is to employ learning algorithms to build black-box models which rely only on realtime data from the sensors. Machine learning is widely used for regression and classification, but thus far data-driven models have not been used for closed-loop control. We present novel Data Predictive Control (DPC) algorithms that use Regression Trees and Random Forests for receding horizon control. We demonstrate the strength of our approach with a case study on a bilinear building model identified using real weather data and sensor measurements. We further apply DPC to a large scale multi-story EnergyPlus building model to curtail total power consumption in a Demand Response setting. In such cases, when the model-based controllers fail due to modeling cost, complexity and scalability, our results show that DPC curtails the desired power usage with high confidence.},
+  html         = {https://ieeexplore.ieee.org/document/8264315/},
+  pdf          = {JainCDC17.pdf},
+}
+
+@Article{JainTCPS2018,
+  author    = {Jain, Achin and Smarra, Francesco and Behl, Madhur and Mangharam, Rahul},
+  title     = {Data-driven model predictive control with regression trees—{A}n application to building energy management},
+  journal   = {ACM Transactions on Cyber-Physical Systems},
+  year      = {2018},
+  volume    = {2},
+  number    = {1},
+  pages     = {4},
+  abstract  = {Model Predictive Control (MPC) plays an important role in optimizing operations of complex cyber-physical systems because of its ability to forecast system’s behavior and act under system level constraints. However, MPC requires reasonably accurate underlying models of the system. In many applications, such as building control for energy management, Demand Response, or peak power reduction, obtaining a high-fidelity physics-based model is cost and time prohibitive, thus limiting the widespread adoption of MPC. To this end, we propose a data-driven control algorithm for MPC that relies only on the historical data. We use multi-output regression trees to represent the system’s dynamics over multiple future time steps and formulate a finite receding horizon control problem that can be solved in real-time in closed-loop with the physical plant. We apply this algorithm to peak power reduction in buildings to optimally trade-off peak power reduction against thermal comfort without having to learn white/grey box models of the systems dynamics.},
+  html      = {https://dl.acm.org/citation.cfm?id=3127023},
+  pdf       = {JainTCPS18.pdf},
+  publisher = {ACM},
+}
+
+@InProceedings{JainBuildSys2016,
+  author       = {Jain, Achin and Mangharam, Rahul and Behl, Madhur},
+  title        = {Data predictive control for peak power reduction},
+  booktitle    = {Proceedings of the 3rd ACM International Conference on Systems for Energy-Efficient Built Environments (BuildSys)},
+  year         = {2016},
+  pages        = {109--118},
+  organization = {ACM},
+  abstract     = {Decisions on how best to optimize today's energy systems operations are becoming ever so complex and conflicting such that model-based predictive control algorithms must play a key role. However, learning dynamical models of energy consuming systems such as buildings, using grey/white box approaches is very cost and time prohibitive due to its complexity. This paper presents data-driven methods for making control-oriented model for peak power reduction in buildings. Specifically, a data predictive control with regression trees (DPCRT) algorithm, is presented. DPCRT is a finite receding horizon method, using which the building operator can optimally trade off peak power reduction against thermal comfort without having to learn white/grey box models of the systems dynamics. We evaluate the performance of our method using a DoE commercial reference virtual test-bed and show how it can be used for learning predictive models with 90% accuracy, and for achieving 8.6% reduction in peak power and costs.},
+  html         = {https://dl.acm.org/citation.cfm?id=2993582},
+  pdf          = {JainBuildSys16.pdf},
+}
+
+@InProceedings{SmarraADHS2018,
+  author       = {Smarra, Francesco and Jain, Achin and Mangharam, Rahul and D'Innocenzo, Alessandro},
+  title        = {Data-driven switched affine modeling for model predictive control},
+  booktitle    = {Proceedings of the IFAC Conference on Analysis and Design of Hybrid Systems (ADHS)},
+  year         = {2018},
+  pages        = {199-204},
+  organization = {IFAC},
+  abstract     = {Model Predictive Control (MPC) is a well consolidated technique to design optimal control strategies, leveraging the capability of a mathematical model to predict the system’s behavior over a predictive horizon. However, building physics-based models for large scale systems, such as buildings and process control, can be cost and time prohibitive. To overcome this problem we propose in this paper a methodology to exploit machine learning techniques (i.e. regression trees and random forests) in order to build a state-space switched affine dynamical model of a large scale system only using historical data. Finite Receding Horizon Control (RHC) setup using control-oriented data-driven models based on regression trees and random forests is presented as well. A comparison with an optimal MPC benchmark and a related methodology is provided on an energy management system to show the performance of the proposed modeling framework. Simulation results show that the proposed approach is very close to the optimum and provides better performance with respect to the related methodology in terms of cost function optimization.},
+  html         = {https://www.sciencedirect.com/science/article/pii/S2405896318311509},
+  pdf          = {SmarraADHS18.pdf},
+}
+
+@Article{SmarraAE2018,
+  author    = {Smarra, Francesco and Jain, Achin and de Rubeis, Tullio and Ambrosini, Dario and D'Innocenzo, Alessandro and Mangharam, Rahul},
+  title     = {Data-driven model predictive control using random forests for building energy optimization and climate control},
+  journal   = {Applied Energy},
+  year      = {2018},
+  abstract  = {Model Predictive Control (MPC) is a model-based technique widely and successfully used over the past years to improve control systems performance. A key factor prohibiting the widespread adoption of MPC for complex systems such as buildings is related to the difficulties (cost, time and effort) associated with the identification of a predictive model of a building. To overcome this problem, we introduce a novel idea for predictive control based on historical building data leveraging machine learning algorithms like regression trees and random forests. We call this approach Data-driven model Predictive Control (DPC), and we apply it to three different case studies to demonstrate its performance, scalability and robustness. In the first case study we consider a benchmark MPC controller using a bilinear building model, then we apply DPC to a data-set simulated from such bilinear model and derive a controller based only on the data. Our results demonstrate that DPC can provide comparable performance with respect to MPC applied to a perfectly known mathematical model. In the second case study we apply DPC to a 6 story 22 zone building model in EnergyPlus, for which model-based control is not economical and practical due to extreme complexity, and address a Demand Response problem. Our results demonstrate scalability and efficiency of DPC showing that DPC provides the desired power curtailment with an average error of 3%. In the third case study we implement and test DPC on real data from an off-grid house located in L’Aquila, Italy. We compare the total amount of energy saved with respect to the classical bang-bang controller, showing that we can perform an energy saving up to 49.2%. Our results demonstrate robustness of our method to uncertainties both in real data acquisition and weather forecast.},
+  html      = {https://www.sciencedirect.com/science/article/abs/pii/S0306261918302575},
+  pdf       = {SmarraAE18.pdf},
+  publisher = {Elsevier},
+}
+
+@Article{JainTVT2016,
+  author    = {Jain, Achin and Nueesch, Tobias and Naegele, Christian and Lassus, Pedro Macri and Onder, Christopher H},
+  title     = {Modeling and control of a hybrid electric vehicle with an electrically assisted turbocharger},
+  journal   = {IEEE Transactions on Vehicular Technology},
+  year      = {2016},
+  volume    = {65},
+  number    = {6},
+  pages     = {4344--4358},
+  abstract  = {This paper investigates the suitability of using an electrically assisted turbocharger in a hybrid electric vehicle (HEV) with a turbocharged engine, based on fuel economy and acceleration performance. This system has two electric machines, i.e., a traction motor and a boost motor coupled to the shaft of the turbocharger, and offers an additional control variable in the energy management problem i.e., the amount of electrical boost (e-boost) to reduce the turbolag. The task of an optimal controller now becomes manifold: deciding the torque split between the engine and the traction motor, the power of the boost motor, and the gear number. A quasi-static model of a parallel HEV with a turbocharged engine is derived, and a method to model turbolag based on a predefined map for the permissible engine torque is proposed. Dynamic programming (DP) is used to solve the optimal control problem. To find out an optimal tradeoff between the two onboard electric machines, the optimal strategy is calculated with a constraint on the maximum total electrical power. The circumstances in which it is advantageous to use the boost motor are discussed. Furthermore, the influence of powertrain components' size on the control strategy is analyzed, specifically in the problem of maximizing acceleration performance, by scaling the engine displacement volume for different sizes of turbochargers keeping the maximum engine torque and power constant, and scaling the motor map for different nominal power values. The robustness of this modeling approach has also been verified.},
+  html      = {https://ieeexplore.ieee.org/abstract/document/7416228},
+  pdf       = {JainTVT16.pdf},
+  publisher = {IEEE},
+}
+
+@Article{JainRE2015,
+  author    = {Jain, Achin and Schildbach, Georg and Fagiano, Lorenzo and Morari, Manfred},
+  title     = {On the design and tuning of linear model predictive control for wind turbines},
+  journal   = {Renewable Energy},
+  year      = {2015},
+  volume    = {80},
+  pages     = {664--673},
+  abstract  = {This paper presents a study on the design of linear model predictive control (MPC) for wind turbines, with a focus on the controller's tuning tradeoffs. A continuously linearized MPC approach is described and applied to control a 3-bladed, horizontal axis, variable speed wind turbine. The tuning involves a multiobjective cost function so that the performance can be optimized with respect to five defined measures: power variation, pitch usage, tower displacement, drivetrain twist and frequency of violating the nominal power limit. A tuning approach based on the computation of sensitivity tables is proposed and tested via numerical simulations using a nonlinear turbine model. The paper further compares the performance of the MPC controller with that of a conventional one.},
+  html      = {https://www.sciencedirect.com/science/article/abs/pii/S0960148115001731},
+  pdf       = {JainRE15.pdf},
+  publisher = {Elsevier},
+}
+
+@InProceedings{JainISRM2013,
+  author    = {Jain, Achin and Qin, Jinna and Abba, Gabriel},
+  title     = {Optimal workplacement for robotic friction stir welding task},
+  booktitle = {Proceedings of the 3rd IFToMM International Symposium on Robotics and Mechatronics (ISRM)},
+  year      = {2013},
+  abstract  = {Robotic manipulators are widely used in industry for welding processes.
+Inadequate joint stiffness in the manipulators often limits their use for high
+quality welding operations because of the deformation errors produced during the process. As a matter of fact, welding quality deteriorates with decreasing joint stiffness. This paper presents an approach to determine an
+optimal workspace of operation by minimizing the lateral deflection errors
+in position and orientation of the end effector during Friction Stir Welding.
+This has been done by estimating the errors in position and orientation of
+the end effector, also the point of contact with work piece which directly
+affects welding quality, when it experiences a wrench during welding operation. The technique was applied to an elastodynamic model of a 6 DOF
+manipulator with different path constraints for welding process to achieve
+optimal task placement. In a nutshell, optimal starting position or an optimal direction of motion for best welding quality can be precisely computed
+or even both together can be calculated but with numerical complexity.},
+  html      = {http://rpsonline.com.sg/proceedings/9789810777449/html/059.xml},
+  pdf       = {JainISRM13.pdf},
+}
+
+@InProceedings{JainBPACS2018,
+  author        = {Jain, Achin and Nong, Derek and Nghiem, Truong X and Mangharam, Rahul},
+  title         = {Digital twins for efficient modeling and control of buildings: An integrated solution with {SCADA} systems},
+  booktitle     = {Proceedings of the 2018 Building Performance Analysis Conference and SimBuild},
+  year          = {2018},
+  __markedentry = {[Achin:]},
+  abstract      = {We develop an integrated solution for incorporating ``digital twins” of real buildings into existing SCADA systems, which enables real-time prediction and advanced control. 
+These digital twins are either EnergyPlus (E+) or data-driven (D+) building models, whose input and output variables are mapped to analogous real building OPC tags and track the real-time operation of the building.
+An E+ digital twin can be used to provide predictions of the building’s performance in different weather, usage, and energy pricing scenarios, which allows for accurate assessment of different control strategies. 
+However, it is not suitable for optimization and predictive control due to its complexity. 
+We develop scalable D+ digital twin based on Gaussian Processes (GP) for accurate prediction and advanced control. 
+A D+ digital twin is much easier, faster, and less expensive to train than developing and tuning an E+ model, while still providing accurate power forecasts and being suitable for control. 
+Data-driven Model Predictive Control (MPC) optimizes control inputs of the predictive D+ model for energy curtailment with thermal comfort guarantees in demand response applications.
+The MPC controller is integrated into the SCADA environment, demonstrating real-time in-the-loop control of D+ digital twins.},
+  html          = {https://www.ashrae.com/File%20Library/Conferences/Specialty%20Conferences/2018%20Building%20Performance%20Analysis%20Conference%20and%20SimBuild/Papers/C110.pdf},
+  pdf           = {JainBPACS18.pdf},
+}
+
+@InProceedings{BehlICCPS2016,
+  author        = {Behl, Madhur and Jain, Achin and Mangharam, Rahul},
+  title         = {Data-driven modeling, control and tools for cyber-physical energy systems},
+  booktitle     = {Proceedings of the 7th International Conference on Cyber-Physical Systems},
+  year          = {2016},
+  pages         = {35},
+  organization  = {IEEE},
+  __markedentry = {[Achin:6]},
+  abstract      = {Demand response (DR) is becoming important as the volatility on the grid continues to increase. Current DR approaches are either completely manual or involve deriving first principles based models which are extremely cost and time prohibitive to build. We consider the problem of data-driven DR for large buildings which involves predicting the demand response baseline, evaluating fixed DR strategies and synthesizing DR control actions. We provide a model based control with regression trees algorithm (mbCRT), which allows us to perform closed-loop control for DR strategy synthesis for large buildings. Our data-driven control synthesis algorithm outperforms rule- based DR by 17% for a large DoE commercial reference building and leads to a curtailment of 380 kW and over $45,000 in savings. Our methods have been integrated into an open source tool called DR-Advisor, which acts as a recommender system for the building's facilities manager and provides suitable control actions to meet the desired load curtailment while maintaining operations and maximizing the economic reward. DR-Advisor achieves 92.8% to 98.9% prediction accuracy for 8 buildings on Penn's campus. We compare DR-Advisor with other data driven methods and rank 2nd on ASHRAE's benchmarking data-set for energy prediction.},
+  html          = {https://ieeexplore.ieee.org/document/7479093},
+  pdf           = {BehlICCPS16.pdf},
+}
+
+@Article{JainABB2014,
+  author  = {Poland, Jan and Jain, Achin and So, Kwok-Kai},
+  title   = {Ordinal regression for meta-modeling in optimization},
+  journal = {ABB Technical Report},
+  year    = {2014},
+}
+
+@Article{JainMasters14,
+  author   = {Jain, Achin},
+  title    = {Optimal control of a hybrid electric cehicle with an electrically assisted turbocharger},
+  journal  = {ETH Zurich},
+  year     = {2014},
+  abstract = {This thesis presents an investigation on suitability of using an electrically as- sisted turbocharger in a hybrid electric vehicle (HEV) with a turbocharged engine, based on fuel economy and acceleration performance. This system has two electric machines, traction motor and boost motor, and offers an additional control variable in energy management problem i.e. the amount of electrical boost (e-boost) to reduce turbolag. The task of an optimal controller now be- comes manifold: deciding the torque split between engine and traction motor, the power of the boost motor and the gear number.
+
+First, a control-oriented model of a parallel HEV with a turbocharged engine is derived based on first principles. After a series of investigations, a suitable method to model turbolag is proposed. It is based on a predefined map for permissible engine torque obtained through scattered interpolation of experi- mental measurements. The boost mechanism uses an electric motor coupled to the shaft of the turbocharger.
+
+Dynamic Programming is used to solve the optimal control problem. In order to find out an optimal trade-off between the two on-board electric machines, optimal strategy is calculated with a constraint on maximum total electrical power. The circumstances in which it is advantageous to use a boost motor have been discussed. In the control problem with fuel minimization, the simula- tion results reveal that fuel consumption of an HEV without the e-boost can be reduced slightly by installing a boost mechanism only under high load require- ments. The impact of e-boost on the acceleration performance of the vehicle is more prominent. Using a fraction of the total available electrical power, a boost motor can significantly reduce the time required to accelerate from an initial speed to a given final speed.
+
+Further, the influence of powertrain component sizes on the operation strategy has been analyzed, specifically in the problem of maximizing acceleration per- formance. A theoretical research is done by scaling the engine displacement volume for different size of turbochargers keeping the maximum engine torque and power constant, and motor map for different nominal powers. The result indicates that the benefits are inversely proportional to the size of the engine as well as the nominal power of the traction motor. This dependence is stronger on the engine size and weaker on the motor power.},
+  pdf      = {JainMastersThesis14.pdf},
+}
+
+@InProceedings{JainBachelors14,
+  author    = {Ajay, Paras and Singhal Puneet and Jain, Achin},
+  title     = {Teleoperation through brain machine interface},
+  booktitle = {Proceedings of the National Conference on Emerging Trends in Mechanical Engineering},
+  year      = {2012},
+  abstract  = {A brain machine interface (BMI) can be used to decode brain signals and control a robotic arm. The paper discusses its application as a prosthetic device, especially for spinal cord injury victims, suffering from paralysis. Neural data for experimentation is recorded from intra-cortical electrodes implanted in a macaque monkey at National Brain Research Center (NBRC). Brain signal decoding is achieved using the population vector algorithm (PVA). A delta manipulator with compliant linkages has been designed integrated with the BMI to perform a standard left-right instructed-delay centre-out reach task. An automatic raisin dispensing mechanism has also been designed and used to automate the complete experiment.},
+  pdf       = {JainBachelorsThesis12.pdf},
+}
+
+@InProceedings{JainL4DC2020,
+  author    = {Jain, Achin and Smarra, Francesco and Reticcioli, Enrico and D'Innocenzo, Alessandro and Morari, Manfred},
+  title     = {{NeurOpt: Neural network based optimization for building energy management and climate control}},
+  booktitle = {Submission to the 2nd Annual Conference on Learning for Dynamics and Control (L4DC)},
+  year      = {2020},
+  abstract  = {Model predictive control (MPC) can provide significant energy cost savings in building operations in the form of energy-efficient control with better occupant comfort, lower peak demand charges, and risk-free participation in demand response. However, the engineering effort required to obtain physics-based models of buildings for MPC is considered to be the biggest bottleneck in making MPC scalable to real buildings. In this paper, we propose a data-driven control algorithm based on neural networks to reduce this cost of model identification. Our approach does not require building domain expertise or retrofitting of the existing heating and cooling systems. We validate our learning and control algorithms on a two-story building with 10 independently controlled zones, located in Italy. We learn dynamical models of energy consumption and zone temperatures with high accuracy and demonstrate energy savings and better occupant comfort compared to the default system controller.},
+  pdf       = {JainL4DC20.pdf},
+}
+
+@InProceedings{KellyICRA2020,
+  author       = {O'Kelly, Matthew and Zheng, Hongrui and Jain, Achin and Auckley, Joseph and Luong, Kim and Mangharam, Rahul},
+  title        = {TunerCar: A superoptimization toolchain for autonomous racing},
+  booktitle    = {Proceedings of the International Conference on Robotics and Automation (ICRA)},
+  year         = {2020},
+  organization = {IEEE},
+  abstract     = {The objective of this effort is to develop an optimal autonomous racer with safe and reusable core autonomy compo- nents that are agnostic to vehicle planning and control software. TUNERCAR is a toolchain that jointly optimizes racing strategy, planning methods, control algorithms and vehicle parameters for an autonomous racecar. In this paper, we detail the target hardware, software, simulators, and systems infrastructure for this toolchain. Our methodology employs a massively parallel implementation of CMA-ES which enables simulations to pro- ceed 6 times faster than real-world rollouts. Besides a massive speed up, we show our approach can reduce the lap times in autonomous racing, given a fixed computational budget. We demonstrate improvements over naive random search of 2.0 seconds per lap, improvements over expert solutions of 0.81 seconds per lap, and beat a human driver by 6.52 seconds. For all tested tracks, our method provides the lowest lap- time, and relative lap-time improvements between 6 and 12 percent. We further compare the performance of our method against hand tuned solutions submitted by over 30 international teams, comprised of graduate students working in the field of autonomous vehicles. Finally, we discuss the effectiveness of utilizing an online planning mechanism to reduce the reality gap between our simulation and actual tests. By driving at the limits of vehicle performance, we are able to efficiently accelerate the development of safe autonomous vehicles.},
+  pdf          = {JainICRA20.pdf},
+}
+
+@Article{SmarraNAHS2020,
+  author       = {Smarra, Francesco and Di Girolamoa, Giovanni Domenico and De Iuliis, Vittorio and Jain, Achin and Mangharam, Rahul and D'Innocenzo, Alessandro},
+  title        = {Data-driven switched affine modeling for MPC using regression trees and random forests},
+  journal      = {Nonlinear Analysis: Hybrid Systems (NAHS)},
+  year         = {2020},
+  abstract     = {Model Predictive Control (MPC) is a well consolidated technique to design optimal control strategies, leveraging the capability of a mathematical model to predict a system’s behavior over a time horizon. However, building physics-based models for large scale systems, such as buildings and process control, can be cost and time prohibitive. To overcome this problem we propose a method- ology to exploit machine learning techniques (i.e. regression trees and random forests) in order to build a Switching Affine dynamical model (deterministic and Markovian) of a large scale system using historical data, and apply Model Predictive Control (MPC). A comparison with an optimal MPC benchmark and related techniques is provided on an energy management system to validate the performance of the proposed methodology.},
+  organization = {IFAC},
+  publisher    = {Elsevier},
+}
+
+@Comment{jabref-meta: databaseType:bibtex;}
