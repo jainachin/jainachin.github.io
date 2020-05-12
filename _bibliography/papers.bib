@@ -40,12 +40,9 @@
 
 @Article{JainTCPS2018,
   author    = {Jain, Achin and Smarra, Francesco and Behl, Madhur and Mangharam, Rahul},
-  title     = {Data-driven model predictive control with regression trees—{A}n application to building energy management},
   journal   = {ACM Transactions on Cyber-Physical Systems},
+  title     = {Data-driven model predictive control with regression trees -- {A}n application to building energy management},
   year      = {2018},
-  volume    = {2},
-  number    = {1},
-  pages     = {4},
   abstract  = {Model Predictive Control (MPC) plays an important role in optimizing operations of complex cyber-physical systems because of its ability to forecast system’s behavior and act under system level constraints. However, MPC requires reasonably accurate underlying models of the system. In many applications, such as building control for energy management, Demand Response, or peak power reduction, obtaining a high-fidelity physics-based model is cost and time prohibitive, thus limiting the widespread adoption of MPC. To this end, we propose a data-driven control algorithm for MPC that relies only on the historical data. We use multi-output regression trees to represent the system’s dynamics over multiple future time steps and formulate a finite receding horizon control problem that can be solved in real-time in closed-loop with the physical plant. We apply this algorithm to peak power reduction in buildings to optimally trade-off peak power reduction against thermal comfort without having to learn white/grey box models of the systems dynamics.},
   html      = {https://dl.acm.org/citation.cfm?id=3127023},
   pdf       = {JainTCPS18.pdf},
@@ -54,10 +51,9 @@
 
 @InProceedings{JainBuildSys2016,
   author       = {Jain, Achin and Mangharam, Rahul and Behl, Madhur},
-  title        = {Data predictive control for peak power reduction},
   booktitle    = {Proceedings of the 3rd ACM International Conference on Systems for Energy-Efficient Built Environments (BuildSys)},
+  title        = {Data predictive control for peak power reduction},
   year         = {2016},
-  pages        = {109--118},
   organization = {ACM},
   abstract     = {Decisions on how best to optimize today's energy systems operations are becoming ever so complex and conflicting such that model-based predictive control algorithms must play a key role. However, learning dynamical models of energy consuming systems such as buildings, using grey/white box approaches is very cost and time prohibitive due to its complexity. This paper presents data-driven methods for making control-oriented model for peak power reduction in buildings. Specifically, a data predictive control with regression trees (DPCRT) algorithm, is presented. DPCRT is a finite receding horizon method, using which the building operator can optimally trade off peak power reduction against thermal comfort without having to learn white/grey box models of the systems dynamics. We evaluate the performance of our method using a DoE commercial reference virtual test-bed and show how it can be used for learning predictive models with 90% accuracy, and for achieving 8.6% reduction in peak power and costs.},
   html         = {https://dl.acm.org/citation.cfm?id=2993582},
@@ -66,10 +62,9 @@
 
 @InProceedings{SmarraADHS2018,
   author       = {Smarra, Francesco and Jain, Achin and Mangharam, Rahul and D'Innocenzo, Alessandro},
-  title        = {Data-driven switched affine modeling for model predictive control},
   booktitle    = {Proceedings of the IFAC Conference on Analysis and Design of Hybrid Systems (ADHS)},
+  title        = {Data-driven switched affine modeling for model predictive control},
   year         = {2018},
-  pages        = {199-204},
   organization = {IFAC},
   abstract     = {Model Predictive Control (MPC) is a well consolidated technique to design optimal control strategies, leveraging the capability of a mathematical model to predict the system’s behavior over a predictive horizon. However, building physics-based models for large scale systems, such as buildings and process control, can be cost and time prohibitive. To overcome this problem we propose in this paper a methodology to exploit machine learning techniques (i.e. regression trees and random forests) in order to build a state-space switched affine dynamical model of a large scale system only using historical data. Finite Receding Horizon Control (RHC) setup using control-oriented data-driven models based on regression trees and random forests is presented as well. A comparison with an optimal MPC benchmark and a related methodology is provided on an energy management system to show the performance of the proposed modeling framework. Simulation results show that the proposed approach is very close to the optimum and provides better performance with respect to the related methodology in terms of cost function optimization.},
   html         = {https://www.sciencedirect.com/science/article/pii/S2405896318311509},
@@ -135,12 +130,11 @@ or even both together can be calculated but with numerical complexity.},
 }
 
 @InProceedings{JainBPACS2018,
-  author        = {Jain, Achin and Nong, Derek and Nghiem, Truong X and Mangharam, Rahul},
-  title         = {Digital twins for efficient modeling and control of buildings: An integrated solution with {SCADA} systems},
-  booktitle     = {Proceedings of the 2018 Building Performance Analysis Conference and SimBuild},
-  year          = {2018},
-  __markedentry = {[Achin:]},
-  abstract      = {We develop an integrated solution for incorporating ``digital twins” of real buildings into existing SCADA systems, which enables real-time prediction and advanced control. 
+  author    = {Jain, Achin and Nong, Derek and Nghiem, Truong X and Mangharam, Rahul},
+  booktitle = {Proceedings of the 2018 Building Performance Analysis Conference and SimBuild},
+  title     = {Digital twins for efficient modeling and control of buildings: An integrated solution with {SCADA} systems},
+  year      = {2018},
+  abstract  = {We develop an integrated solution for incorporating ``digital twins” of real buildings into existing SCADA systems, which enables real-time prediction and advanced control. 
 These digital twins are either EnergyPlus (E+) or data-driven (D+) building models, whose input and output variables are mapped to analogous real building OPC tags and track the real-time operation of the building.
 An E+ digital twin can be used to provide predictions of the building’s performance in different weather, usage, and energy pricing scenarios, which allows for accurate assessment of different control strategies. 
 However, it is not suitable for optimization and predictive control due to its complexity. 
@@ -148,21 +142,21 @@ We develop scalable D+ digital twin based on Gaussian Processes (GP) for accurat
 A D+ digital twin is much easier, faster, and less expensive to train than developing and tuning an E+ model, while still providing accurate power forecasts and being suitable for control. 
 Data-driven Model Predictive Control (MPC) optimizes control inputs of the predictive D+ model for energy curtailment with thermal comfort guarantees in demand response applications.
 The MPC controller is integrated into the SCADA environment, demonstrating real-time in-the-loop control of D+ digital twins.},
-  html          = {https://www.ashrae.com/File%20Library/Conferences/Specialty%20Conferences/2018%20Building%20Performance%20Analysis%20Conference%20and%20SimBuild/Papers/C110.pdf},
-  pdf           = {JainBPACS18.pdf},
+  groups    = {[Achin:]},
+  html      = {https://www.ashrae.com/File%20Library/Conferences/Specialty%20Conferences/2018%20Building%20Performance%20Analysis%20Conference%20and%20SimBuild/Papers/C110.pdf},
+  pdf       = {JainBPACS18.pdf},
 }
 
 @InProceedings{BehlICCPS2016,
-  author        = {Behl, Madhur and Jain, Achin and Mangharam, Rahul},
-  title         = {Data-driven modeling, control and tools for cyber-physical energy systems},
-  booktitle     = {Proceedings of the 7th International Conference on Cyber-Physical Systems},
-  year          = {2016},
-  pages         = {35},
-  organization  = {IEEE},
-  __markedentry = {[Achin:6]},
-  abstract      = {Demand response (DR) is becoming important as the volatility on the grid continues to increase. Current DR approaches are either completely manual or involve deriving first principles based models which are extremely cost and time prohibitive to build. We consider the problem of data-driven DR for large buildings which involves predicting the demand response baseline, evaluating fixed DR strategies and synthesizing DR control actions. We provide a model based control with regression trees algorithm (mbCRT), which allows us to perform closed-loop control for DR strategy synthesis for large buildings. Our data-driven control synthesis algorithm outperforms rule- based DR by 17% for a large DoE commercial reference building and leads to a curtailment of 380 kW and over $45,000 in savings. Our methods have been integrated into an open source tool called DR-Advisor, which acts as a recommender system for the building's facilities manager and provides suitable control actions to meet the desired load curtailment while maintaining operations and maximizing the economic reward. DR-Advisor achieves 92.8% to 98.9% prediction accuracy for 8 buildings on Penn's campus. We compare DR-Advisor with other data driven methods and rank 2nd on ASHRAE's benchmarking data-set for energy prediction.},
-  html          = {https://ieeexplore.ieee.org/document/7479093},
-  pdf           = {BehlICCPS16.pdf},
+  author       = {Behl, Madhur and Jain, Achin and Mangharam, Rahul},
+  booktitle    = {Proceedings of the 7th International Conference on Cyber-Physical Systems},
+  title        = {Data-driven modeling, control and tools for cyber-physical energy systems},
+  year         = {2016},
+  organization = {IEEE},
+  abstract     = {Demand response (DR) is becoming important as the volatility on the grid continues to increase. Current DR approaches are either completely manual or involve deriving first principles based models which are extremely cost and time prohibitive to build. We consider the problem of data-driven DR for large buildings which involves predicting the demand response baseline, evaluating fixed DR strategies and synthesizing DR control actions. We provide a model based control with regression trees algorithm (mbCRT), which allows us to perform closed-loop control for DR strategy synthesis for large buildings. Our data-driven control synthesis algorithm outperforms rule- based DR by 17% for a large DoE commercial reference building and leads to a curtailment of 380 kW and over $45,000 in savings. Our methods have been integrated into an open source tool called DR-Advisor, which acts as a recommender system for the building's facilities manager and provides suitable control actions to meet the desired load curtailment while maintaining operations and maximizing the economic reward. DR-Advisor achieves 92.8% to 98.9% prediction accuracy for 8 buildings on Penn's campus. We compare DR-Advisor with other data driven methods and rank 2nd on ASHRAE's benchmarking data-set for energy prediction.},
+  groups       = {Achin:6},
+  html         = {https://ieeexplore.ieee.org/document/7479093},
+  pdf          = {BehlICCPS16.pdf},
 }
 
 @Article{JainABB2014,
@@ -217,8 +211,8 @@ Further, the influence of powertrain component sizes on the operation strategy h
 
 @Article{SmarraNAHS2020,
   author       = {Smarra, Francesco and Di Girolamoa, Giovanni Domenico and De Iuliis, Vittorio and Jain, Achin and Mangharam, Rahul and D'Innocenzo, Alessandro},
-  title        = {Data-driven switched affine modeling for MPC using regression trees and random forests},
   journal      = {Nonlinear Analysis: Hybrid Systems (NAHS)},
+  title        = {{Data-driven switched affine modeling for MPC using regression trees and random forests}},
   year         = {2020},
   abstract     = {Model Predictive Control (MPC) is a well consolidated technique to design optimal control strategies, leveraging the capability of a mathematical model to predict a system’s behavior over a time horizon. However, building physics-based models for large scale systems, such as buildings and process control, can be cost and time prohibitive. To overcome this problem we propose a method- ology to exploit machine learning techniques (i.e. regression trees and random forests) in order to build a Switching Affine dynamical model (deterministic and Markovian) of a large scale system using historical data, and apply Model Predictive Control (MPC). A comparison with an optimal MPC benchmark and related techniques is provided on an energy management system to validate the performance of the proposed methodology.},
   html         = {https://www.sciencedirect.com/science/article/pii/S1751570X20300297},
@@ -236,4 +230,20 @@ Further, the influence of powertrain component sizes on the operation strategy h
   pdf      = {JainCDC20.pdf},
 }
 
+@Article{JainCoRL2020,
+  author   = {Jain, Achin and Chaudhari, Pratik and Morari, Manfred},
+  journal  = {arXiv preprint arXiv:2005.04755},
+  title    = {{BayesRace: Learning to race autonomously using prior experience}},
+  year     = {2020},
+  abstract = {Learning to race autonomously is a challenging problem. It requires perception, estimation, planning, and control to work together in synchronization while driving at the limit of a vehicle's handling capability. Among others, one of the fundamental challenges lies in predicting the vehicle's future states like position, orientation, and speed with high accuracy because it is inevitably hard to identify vehicle model parameters that capture its real nonlinear dynamics in the presence of lateral tire slip. We present a model-based planning and control framework for autonomous racing that significantly reduces the effort required in system identification. Our approach bridges the gap between the design in a simulation and the real world by learning from on-board sensor measurements. Thus, the teams participating in autonomous racing competitions can start racing on new tracks without having to worry about tuning the vehicle model.},
+  pdf      = {JainBayesRace.pdf},
+}
+
 @Comment{jabref-meta: databaseType:bibtex;}
+
+@Comment{jabref-meta: grouping:
+0 AllEntriesGroup:;
+1 StaticGroup:Markings\;2\;1\;\;\;\;;
+2 StaticGroup:Achin:6\;2\;1\;\;\;\;;
+2 StaticGroup:[Achin:]\;2\;1\;\;\;\;;
+}
